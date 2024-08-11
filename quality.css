@@ -1,0 +1,187 @@
+*{
+  margin: 0;
+  padding: 0;
+}
+
+
+
+
+body {
+  background-color: rgba(5, 5, 5, 0.8);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 80px;
+  color: white;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.exit {
+  display: flex;
+  justify-content:center;
+  align-content: center;
+  flex-direction: row;
+  flex-wrap: wrap;
+  margin-left: 400px;
+  border:  2px white solid;
+  width: 30px;
+  height: 30px;
+  color: white;
+  font-size: 20px;
+  background-color: rgb(4, 83, 202);
+  border-radius: 45px;
+  padding: 10px;
+  cursor:pointer;
+}
+
+nav {
+  text-align: center;
+}
+
+
+.navbar a {
+  font-family: Arial;
+  color: white;
+  text-decoration: none;
+  display:flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+
+.exit :hover {
+  opacity:0.8;
+}
+.navbar a:hover {
+  opacity: 0.5;
+}
+
+
+.navbar div {
+  font-weight: 400;
+  margin-top: 10px;
+  margin-bottom: 30px;
+}
+
+
+
+.controls-container {
+  margin-top: 40px;
+}
+
+.quality-container,
+.controls-container,
+.chat-container,
+.keybinds-container,
+.game-mechanics-container {
+  background-color: rgb(4, 83, 202);
+  font-size: 18px;
+  border-radius: 8px;
+  opacity: 1;
+  transition: opacity 0.15s;
+  cursor: pointer;
+  width: 150px;
+  height: 45px;
+  text-align: center;
+  align-content: center;
+
+}
+
+.quality-container:hover,
+.controls-container:hover,
+.chat-container:hover,
+.keybinds-container:hover,
+.game-mechanics-container:hover {
+  background-color: rgba(4, 83, 202, 0.418);
+} 
+
+
+
+section {
+display: flex;
+}
+
+
+.button-container {
+  cursor: pointer;
+  display: flex;
+  flex-wrap: wrap;
+  width: 300px;
+  margin-left: -10px;
+}
+
+
+.high-button,
+.medium-button,
+.low-button  {
+  background-color: rgba(255, 145, 0, 0.87);
+  color: white;
+  padding: 13px 20px;
+  height: 50px;
+  border: none;
+  border-radius: 3px;
+  font-weight: 500;
+  cursor: pointer;
+  margin-left: 20px;
+  margin-right: 5px;
+
+}
+
+.is-toggled {
+  background-color: rgba(207, 119, 3, 0.507);
+  
+}
+
+div .setting-button-container .is-toggled {
+  background-color: rgba(207, 119, 3, 0.507);
+  color: white;
+}
+
+div .dark-button .is-toggled {
+  background-color: rgba(207, 119, 3, 0.507);
+  color:  rgba(236,236,236);
+}
+
+.is-Toggled-Blind{
+  background-color: rgba(207, 119, 3, 0.507) !important;
+  color: white !important;
+}
+
+main {
+  margin-bottom: 150px;
+  margin-top: -30px;
+  margin-left: 15px;
+  margin-right: 15px;
+  justify-content: center;
+}
+
+
+div .setting-button button {
+  
+  background-color: rgba(255, 145, 0, 0.87);
+  color: white;
+  padding: 10px 4px;
+  font-size: 14px;
+  border: none;
+  border-radius: 3px;
+  font-weight: 500;
+  cursor: pointer;
+  height: 50px;
+  margin-right: 6px;
+  margin-left: 10px;
+}
+
+.color-blind-button {
+ margin-top: 10px;
+}
+
+.controls-container,
+.chat-container,
+.keybinds-container,
+.game-mechanics-container {
+ 
+  border: 2px solid red;
+
+}
+
+
