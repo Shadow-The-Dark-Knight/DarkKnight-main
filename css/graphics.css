@@ -10,29 +10,37 @@ body {
   background-color: rgba(5, 5, 5, 0.8);
   display: flex;
   align-items: center;
-  justify-content: center;
+  justify-content: flex-end;
+  margin-right: 1rem;
   margin-top: 90px;
   color: white;
   font-family: Arial, Helvetica, sans-serif;
+  animation-name: screen;
+  animation-timing-function: 3s;
+  animation-delay: 2s;
+  animation-iteration-count: 1; 
 }
 
 .exit {
   display: flex;
-  justify-content:center;
+  justify-content:flex-end !important;
   align-content: center;
   flex-direction: row;
-  flex-wrap: wrap;
-  margin-left: 400px;
-  border:  2px white solid;
   width: 30px;
   height: 30px;
   color: white;
   font-size: 20px;
-  background-color: rgb(4, 83, 202);
   border-radius: 45px;
   padding: 10px;
   cursor:pointer;
-  margin-bottom: 5px;;
+  margin-bottom: 5px;
+  background-color: black;
+  display: none;
+  margin-left: 100px;
+}
+
+.js-exit {
+  display: initial;
 }
 
 nav {
@@ -53,8 +61,28 @@ nav {
 
 
 .overlay {
-  position:relative;
+  border: 2px solid blue;
+
 }
+
+.img-container {
+  display: flex;
+  justify-content: flex-end;
+}
+
+#setting-icon {
+  height: 4rem;
+  cursor: pointer;
+  display: initial;
+}
+
+
+.is-icon {
+  display: none;
+}
+
+
+
 
 
 
@@ -86,6 +114,7 @@ nav {
   height: 45px;
   text-align: center;
   align-content: center;
+  display: none;
 }
 
 .quality-container:hover,
@@ -95,6 +124,10 @@ nav {
 .game-mechanics-container:hover {
   background-color: rgba(4, 83, 202, 0.418);
 } 
+
+.is-container {
+  display: initial;
+}
 
 
 

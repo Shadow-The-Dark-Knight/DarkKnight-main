@@ -1,34 +1,39 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet" href="/css/graphics.css">
   <!-- use / first-->
   <title> Setting page </title>
 </head>
 <body>
   <div class="overlay">
-    <div class="exit"> X</div>
-    <nav class="navbar">
-    
-     
 
-        <div class="quality-container">
+    <div class="exit js-exit"  id="x"> X
+      </div>
+
+      <div class="img-container js-exit">
+        <img 
+        onclick="toggleIcon()" src="setting-icon.png" id="setting-icon" alt="">
+      </div>
+    <nav class="navbar">
+        <div class="quality-container js-quality-container">
           <div><a href="quality.html">Quality</a></div>
         </div>
   
-        <div class="controls-container">
+        <div class="controls-container js-controls-container">
           <div><a href="control.html">Controls</a></div>
         </div>
   
-        <div class="chat-container">
+        <div class="chat-container js-chat-container">
           <div><a href="chat.html">Chat</a></div>
         </div>
   
-        <div class="keybinds-container">
+        <div class="keybinds-container js-keybinds-container">
           <div><a href="keybinds.html">Keybinds</a></div>
         </div>
 
-        <div class="game-mechanics-container">
+        <div class="game-mechanics-container js-game-mechanics-container">
           <div><a href="game-mechanics.html">Mechanics</a></div>
         </div>
 
@@ -40,7 +45,10 @@
   make sure to strech the buttons   
   -->
 
-     
-
+    
+<script src="https://unpkg.com/boxicons@2.1.4/dist/boxicons.js" style="color:rgb(13, 13, 187);"></script>
+<script src="/js/setting-popup.js"></script>
 </body>
+
 </html>
+
