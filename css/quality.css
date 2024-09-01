@@ -36,6 +36,7 @@ body {
 
 nav {
   text-align: center;
+  border: 2px solid red;
 }
 
 
@@ -48,6 +49,18 @@ nav {
   justify-content: center;
   align-items: center;
 }
+
+#setting-icon {
+  height: 4rem;
+  cursor: pointer;
+  border: 2px solid red;
+}
+
+.js-overlay {
+  border: 2px solid blue;
+  height: 500px;
+}
+
 
 .exit :hover {
   opacity:0.8;
@@ -62,7 +75,6 @@ nav {
   margin-top: 10px;
   margin-bottom: 30px;
 }
-
 
 
 .controls-container {

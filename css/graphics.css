@@ -23,7 +23,7 @@ body {
 
 .exit {
   display: flex;
-  justify-content:flex-end !important;
+  justify-content:center !important;
   align-content: center;
   flex-direction: row;
   width: 30px;
@@ -33,19 +33,18 @@ body {
   border-radius: 45px;
   padding: 10px;
   cursor:pointer;
-  margin-bottom: 5px;
-  background-color: black;
-  display: none;
-  margin-left: 100px;
+  margin-bottom: 1rem;
+  background-color: rgb(4, 83, 202);
+  border: 2px solid red;
+  position: absolute;
+  top: 100px;
 }
 
-.js-exit {
-  display: initial;
-}
 
 nav {
   text-align: center;
-  margin-top: 51px;
+  margin-top: 4rem;
+
 }
 
 
@@ -61,13 +60,14 @@ nav {
 
 
 .overlay {
-  border: 2px solid blue;
-
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 .img-container {
   display: flex;
-  justify-content: flex-end;
 }
 
 #setting-icon {
@@ -75,13 +75,6 @@ nav {
   cursor: pointer;
   display: initial;
 }
-
-
-.is-icon {
-  display: none;
-}
-
-
 
 
 
@@ -114,7 +107,6 @@ nav {
   height: 45px;
   text-align: center;
   align-content: center;
-  display: none;
 }
 
 .quality-container:hover,
@@ -124,10 +116,6 @@ nav {
 .game-mechanics-container:hover {
   background-color: rgba(4, 83, 202, 0.418);
 } 
-
-.is-container {
-  display: initial;
-}
 
 
 

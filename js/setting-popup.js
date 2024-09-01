@@ -1,6 +1,7 @@
 // Get the buttons
 const openSettingsButton = document.getElementById('setting-icon');
 const closeSettingsButton = document.querySelector(".js-exit");
+const containerOfBtns = document.querySelector('.js-navbar')
 
 // Function for changing the state of the settings
 function settings(state) {
@@ -9,6 +10,8 @@ function settings(state) {
   if (state === 'open'){
     // Remove the display on the element which then causes it to default back to your CSS
     closeSettingsButton.style.display = "";
+    containerOfBtns.style.display = "";
+    openSettingsButton.style.display = "none";
 
     // TODO: show the settings tab
 
@@ -20,7 +23,8 @@ function settings(state) {
   if (state === 'close'){
     // Set display to none to hide the button
     closeSettingsButton.style.display = "none";
-    
+    containerOfBtns.style.display = "none";
+    openSettingsButton.style.display = "";
     // TODO: hide the settings tab
 
     // End function
@@ -45,32 +49,3 @@ closeSettingsButton.onclick = () => {
 };
 settings('close');
 
-const qualtiyContainer = document.querySelector('.js-quality-container');
-const controlsContainer = document.querySelector('.js-controls-container');
-const chatContainer = document.querySelector('.js-chat-container');
-const keybindsContainer = document.querySelector('js-keybinds-container');
-const gameMechanicsContainer = document.querySelector('.js-game-mechanics-container');
-
-function container(condition) {
-  if (condition === 'open') {
-    // allows container to appear
-    qualtiyContainer.classList.add('.is-container');
-
-    return;
-  }
-  
-  if (condition === 'closed') {
-    // makes container disapper 
-    qualtiyContainer.classList.remove('.is-container');
-
-    return;
-  }
-}
-
-qualtiyContainer.onclick = () => {
-  container('open');
-}
-
-qualtiyContainer.onclick = () => {
-  container('closed');
-}
