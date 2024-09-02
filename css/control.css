@@ -87,27 +87,31 @@ nav {
 
 
 
-
-
-
-
 .quality-container,
 .controls-container,
 .chat-container,
 .keybinds-container,
 .game-mechanics-container {
-  background-color: rgb(4, 83, 202);
-  font-size: 18px;
-  border-radius: 8px;
-  opacity: 1;
-  transition: opacity 0.15s;
-  cursor: pointer;
-  width: 150px;
-  height: 45px;
-  text-align: center;
-  align-content: center;
-}
+  -webkit-user-select: none;
+    user-select: none;
+    align-content: center;
+    width: 100px;
+    height: 30px;
+    cursor: pointer;
+    outline: 0;
+    text-align: center;
+    padding: 8px 16px;
+    border-radius: 4px;
+    box-shadow: none;
+    border: none;
+    background-color: #3d5dff;
+    color: #fff;
+    font-size: 16px;
+    text-decoration: none;
+    box-shadow: 0 2px 10px rgba(0,0,0,.2),0 4px 0 #374ebf;
+    margin: 16px auto
 
+}
 .quality-container:hover,
 .controls-container:hover,
 .chat-container:hover,
@@ -131,15 +135,9 @@ main {
 }
 
 main input {
-  margin-top: -275px;
+  margin-top: -266px;
   margin-right: 5px;
 }
 
 
 
-.quality-container,
-.chat-container,
-.keybinds-container,
-.game-mechanics-container {
-  border: 2px solid red;
-}
