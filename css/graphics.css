@@ -4,6 +4,8 @@
 }
 
 
+
+
 body {
   background-color: rgba(5, 5, 5, 0.8);
   display: flex;
@@ -33,6 +35,7 @@ body {
   background-color: rgb(4, 83, 202);
 }
 
+/* change this to match other parts*/
 
 nav {
   text-align: center;
