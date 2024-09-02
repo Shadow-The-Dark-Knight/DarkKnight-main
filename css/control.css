@@ -10,32 +10,37 @@ body {
   background-color: rgba(5, 5, 5, 0.8);
   display: flex;
   align-items: center;
-  justify-content: center;
-  margin-top: 80px;
+  justify-content: flex-end;
   color: white;
   font-family: Arial, Helvetica, sans-serif;
+  animation-name: screen;
+  animation-timing-function: 3s;
+  animation-delay: 2s;
+  animation-iteration-count: 1; 
 }
 
 .exit {
   display: flex;
   justify-content:center;
-  align-content: center;
-  flex-direction: row;
-  flex-wrap: wrap;
-  margin-left: 400px;
-  border:  2px white solid;
   width: 30px;
   height: 30px;
   color: white;
   font-size: 20px;
-  background-color: rgb(4, 83, 202);
   border-radius: 45px;
   padding: 10px;
   cursor:pointer;
+  margin-bottom: 1rem;
+  margin-right: -32.6rem;
+  margin-top: 0.4rem;
+  background-color: rgb(4, 83, 202);
 }
+
 
 nav {
   text-align: center;
+  margin-top: 4rem;
+  width: 33rem;
+  margin-top: 6rem;
 }
 
 
@@ -51,9 +56,20 @@ nav {
 
 
 .overlay {
-  position:relative;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: flex-end;
 }
 
+
+
+#setting-icon {
+  height: 4rem;
+  cursor: pointer;
+  display: initial;
+
+}
 
 
 .exit :hover {
@@ -115,7 +131,7 @@ main {
 }
 
 main input {
-  margin-top: -268px;
+  margin-top: -275px;
   margin-right: 5px;
 }
 

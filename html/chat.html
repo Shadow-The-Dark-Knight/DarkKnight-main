@@ -8,15 +8,22 @@
 <body>
   <div class="overlay">
   
-    <nav class="navbar">
-      <div class="exit"> X</div>
-      
+
+    <div class="exit js-exit"  id="x"> X
+    </div>
+
+    <div class="js-overlay">
+      <div class="img-container js-exit">
+        <img 
+         src="setting-icon.png" class="js-icon" id="setting-icon" alt="">
+      </div>
+    </div>
+
+
+    <nav class="navbar js-navbar">   
    
-   <section>
-    
-    
-    
-    
+    <section>
+
     <div class="block-container">
 
       <div class="quality-container"> <a href="quality.html">Quality</a></div>
@@ -99,32 +106,7 @@
     </main>
     </section>
     
-    <script>
-      function textButton(selector) {
-        const textButton = document.querySelector(selector);
-        if(!textButton.classList.contains('is-Toggled')) {
+    <script src="/js/chat.js"></script>
 
-          previousButton();
-
-          textButton.classList.add('is-Toggled');
-        } else {
-          textButton.classList.remove('is-Toggled');
-        }
-      }
-
-      function previousButton() {
-      const previousTitleButton = document.querySelector('.is-Toggled');
-      if(previousTitleButton) {
-        previousTitleButton.classList.remove('.is-Toggled');
-      }
-      }
-
-
-      /* fix script to have only one button chosen */
-    </script>
-
-   
-  
-    
 </body>
 </html>
