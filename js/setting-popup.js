@@ -2,20 +2,24 @@
 const openSettingsButton = document.getElementById('setting-icon');
 const closeSettingsButton = document.querySelector(".js-exit");
 const containerOfBtns = document.querySelector('.js-navbar')
+const overlayBackground = document.querySelector('.js-overlay')
 
 // Function for changing the state of the settings
 function settings(state) {
 
 
   if (state === 'open'){
-    // Remove the display on the element which then causes it to default back to your CSS
     closeSettingsButton.style.display = "";
     containerOfBtns.style.display = "";
+    Object.assign(overlayBackground.style, {
+      background: "",
+      boxShadow: "",
+      border: "",
+    })
     openSettingsButton.style.display = "none";
 
-    // TODO: show the settings tab
 
-    // End function
+ 
     return;
   }
 
@@ -24,10 +28,12 @@ function settings(state) {
     // Set display to none to hide the button
     closeSettingsButton.style.display = "none";
     containerOfBtns.style.display = "none";
+    Object.assign(overlayBackground.style, {
+      background: "none",
+      boxShadow: "none",
+      border: "none",
+    })
     openSettingsButton.style.display = "";
-    // TODO: hide the settings tab
-
-    // End function
     return;
   }
 
@@ -48,4 +54,3 @@ closeSettingsButton.onclick = () => {
   settings('close');
 };
 settings('close');
-
