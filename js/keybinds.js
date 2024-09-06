@@ -1,2 +1,2 @@
-import { settings } from "./setting-popup.js";
+import { settings } from "./quality.js";
 settings();
