@@ -1,3 +1,5 @@
+import { settings } from "./setting-popup.js";
+settings();
 
 function textButton(selector) {
   const textButton = document.querySelector(selector);

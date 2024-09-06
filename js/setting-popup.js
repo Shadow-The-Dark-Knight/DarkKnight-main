@@ -1,12 +1,12 @@
-// Get the buttons
+
 const openSettingsButton = document.getElementById('setting-icon');
 const closeSettingsButton = document.querySelector(".js-exit");
-const containerOfBtns = document.querySelector('.js-navbar')
-const overlayBackground = document.querySelector('.js-overlay')
+const containerOfBtns = document.querySelector('.js-navbar');
+const overlayBackground = document.querySelector('.js-overlay');
+
 
 // Function for changing the state of the settings
-function settings(state) {
-
+ export function settings(state) {
 
   if (state === 'open'){
     closeSettingsButton.style.display = "";
@@ -39,13 +39,13 @@ function settings(state) {
 
 
   // if the state was not matched make a error
-  throw new Error(`State '${state}' is not accepted`);
+  
   
  
 
 }
 
-// Setup event lis for buttons
+
 openSettingsButton.onclick = () => {
   settings('open');
 };

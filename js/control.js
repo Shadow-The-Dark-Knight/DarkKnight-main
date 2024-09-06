@@ -1,4 +1,5 @@
-
+import { settings } from "./setting-popup.js";
+settings();
 
 
   const exitBtn = document.querySelector('.js-exit');
