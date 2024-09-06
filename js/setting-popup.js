@@ -6,7 +6,7 @@ const overlayBackground = document.querySelector('.js-overlay');
 
 
 // Function for changing the state of the settings
- export function settings(state) {
+  function settings(state) {
 
   if (state === 'open'){
     closeSettingsButton.style.display = "";
