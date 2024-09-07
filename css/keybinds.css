@@ -55,7 +55,7 @@ nav {
 
 .overlay {
   width: 30%;
-  height: 100%;
+  min-height: 100vh;
   display: flex;
   justify-content: flex-end;
   background-color: #1c1c1c;
