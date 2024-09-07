@@ -144,6 +144,7 @@ main {
   justify-content: space-around;  
   width: 300px;
   align-self: center;
+  margin-bottom: -0.3rem !important;
 }
 
 
