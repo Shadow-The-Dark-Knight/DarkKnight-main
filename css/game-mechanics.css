@@ -13,10 +13,6 @@ body {
   justify-content: flex-end;
   color: white;
   font-family: Arial, Helvetica, sans-serif;
-  animation-name: screen;
-  animation-timing-function: 3s;
-  animation-delay: 2s;
-  animation-iteration-count: 1; 
 }
 
 .exit {
@@ -25,50 +21,57 @@ body {
   width: 30px;
   height: 30px;
   color: white;
-  font-size: 20px;
-  border-radius: 45px;
+  font-size: 1.15rem;
   padding: 10px;
   cursor:pointer;
   margin-bottom: 1rem;
-  margin-right: -32.6rem;
+  margin-right: -30.7rem;
   margin-top: 0.4rem;
-  background-color: rgb(4, 83, 202);
+  font-weight: 600;
 }
 
 
 nav {
   text-align: center;
   margin-top: 4rem;
-  width: 33rem;
+  width: 21rem;
   margin-top: 6rem;
+  margin-right: 10rem;
 }
 
 
 .navbar a {
-  font-family: Arial;
+  align-content: flex-start;
   color: white;
   text-decoration: none;
   display:flex;
   flex-direction: row;
   justify-content: center;
   align-items: center;
+  font-weight: 600;
+  font-size: 1rem;
 }
 
 
 .overlay {
-  width: 100%;
+  width: 30%;
   height: 100%;
   display: flex;
   justify-content: flex-end;
+  background-color: #1c1c1c;
+  border-radius: 8px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.10);
+  padding: 20px;
+  border: 1px solid #2e2e2e;
 }
-
 
 
 #setting-icon {
   height: 4rem;
   cursor: pointer;
-  display: initial;
+
 }
+
 
 
 .exit :hover {
@@ -82,7 +85,9 @@ nav {
   font-weight: 400;
   margin-top: 10px;
   margin-bottom: 30px;
+  font-weight: 600;
 }
+
 
 .quality-container,
 .controls-container,
@@ -106,8 +111,8 @@ nav {
     font-size: 16px;
     text-decoration: none;
     box-shadow: 0 2px 10px rgba(0,0,0,.2),0 4px 0 #374ebf;
-    margin: 16px auto
-
+    margin: 16px auto;
+    margin-left: 2rem;
 }
 
 .quality-container:hover,

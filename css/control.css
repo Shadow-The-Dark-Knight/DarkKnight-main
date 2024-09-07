@@ -13,10 +13,6 @@ body {
   justify-content: flex-end;
   color: white;
   font-family: Arial, Helvetica, sans-serif;
-  animation-name: screen;
-  animation-timing-function: 3s;
-  animation-delay: 2s;
-  animation-iteration-count: 1; 
 }
 
 .exit {
@@ -25,51 +21,55 @@ body {
   width: 30px;
   height: 30px;
   color: white;
-  font-size: 20px;
-  border-radius: 45px;
+  font-size: 1.15rem;
   padding: 10px;
   cursor:pointer;
   margin-bottom: 1rem;
-  margin-right: -32.6rem;
+  margin-right: -30.7rem;
   margin-top: 0.4rem;
-  background-color: rgb(4, 83, 202);
+  font-weight: 600;
 }
 
 
 nav {
   text-align: center;
-  margin-top: 4rem;
-  width: 33rem;
+  width: 21rem;
   margin-top: 6rem;
+  margin-right: 10rem;
 }
 
 
 .navbar a {
-  font-family: Arial;
   color: white;
   text-decoration: none;
   display:flex;
   flex-direction: row;
   justify-content: center;
   align-items: center;
+  font-weight: 600;
+  font-size: 1rem;
 }
 
 
 .overlay {
-  width: 100%;
-  height: 100%;
+  width: 30%;
+  min-height: 100%;
   display: flex;
   justify-content: flex-end;
+  background-color: #1c1c1c;
+  border-radius: 8px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.10);
+  padding: 20px;
+  border: 1px solid #2e2e2e;
 }
-
 
 
 #setting-icon {
   height: 4rem;
   cursor: pointer;
-  display: initial;
 
 }
+
 
 
 .exit :hover {
@@ -80,10 +80,11 @@ nav {
 }
 
 .navbar div {
-  font-weight: 400;
   margin-top: 10px;
   margin-bottom: 30px;
+  font-weight: 600;
 }
+
 
 
 
@@ -106,12 +107,12 @@ nav {
     border: none;
     background-color: #3d5dff;
     color: #fff;
-    font-size: 16px;
     text-decoration: none;
     box-shadow: 0 2px 10px rgba(0,0,0,.2),0 4px 0 #374ebf;
-    margin: 16px auto
-
+    margin: 16px auto;
+    margin-left: 2rem;
 }
+
 .quality-container:hover,
 .controls-container:hover,
 .chat-container:hover,
@@ -120,24 +121,38 @@ nav {
   background-color: rgba(4, 83, 202, 0.418);
 } 
 
-
-
 section {
   display: flex;
 }
 
-
-main {
-  display: flex;
-  margin-left:20px;
-  margin-top: 108px;
-  margin-bottom: 40px;
+.btn-container {
+  display: flexbox;
+  margin-left: 1rem;
 }
 
-main input {
-  margin-top: -266px;
-  margin-right: 5px;
+div button {
+  margin-top: 6rem;
+  -webkit-user-select: none;
+  user-select: none;
+  cursor: pointer;
+  display: inline-block;
+  outline: 0;
+  text-align: center;
+  padding: 6px 10px;
+  border-radius: 4px;
+  border: none;
+  color: #fff;
+  font-size: 0.8rem;
+  text-decoration: none;
+  box-shadow: 0 2px 10px rgba(0,0,0,.2),0 4px 0#ff9c4c;
+  font-weight: 600;
 }
 
+.reg-button {
+  background-color: #ff9c4c;
+}
 
+.js-button {
+  background-color: #ff8a2a;
+}
 

@@ -54,8 +54,7 @@ nav {
 
 
 .overlay {
-  width: 60%;
-  height: 100%;
+  width: 30%;
   display: flex;
   justify-content: flex-end;
   background-color: #1c1c1c;
@@ -64,7 +63,7 @@ nav {
   padding: 20px;
   border: 1px solid #2e2e2e;
 }
-
+/* 60% width*/
 
 #setting-icon {
   height: 4rem;
@@ -88,12 +87,6 @@ nav {
   font-weight: 600;
 }
 
-
-
-
-.controls-container {
-  margin-top: 40px;
-}
 
 .quality-container,
 .controls-container,

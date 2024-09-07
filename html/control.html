@@ -3,24 +3,25 @@
 <head>
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet" href="/css/control.css">
+  <link rel="stylesheet" href="/css/media-quality.css">
 </head>
 <body>
 
 
-  <div class="overlay">
-   
-    <div class="exit js-exit"  id="x"> X
-    </div>
+  <div class="overlay js-overlay">
 
-    <div class="js-overlay">
-      <div class="img-container js-exit">
-        <img 
-         src="setting-icon.png" class="js-icon" id="setting-icon" alt="">
+    <div class="exit js-exit"  id="x"> X
       </div>
-    </div>
+        
+      <div>
+        <div class="img-container">
+          <img 
+           src="setting-icon.png" id="setting-icon" alt="">
+        </div>
+      </div>
 
     <nav class="navbar js-navbar">
-   
+
    <section>
     
 
@@ -53,19 +54,18 @@
     </div>
 
 
-      <main>
-        <input type="checkbox">
-        Move with Mouse
-      </main>
+    <div class="btn-container">
+      <button class="js-button reg-button">Move with mouse </button>
+    </div>
 
    
 
    </section>
 
+   </nav>
 
   </div>
 
   <script type="module" src="/js/control.js"></script>
- 
 </body>
 </html>
