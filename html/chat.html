@@ -3,21 +3,23 @@
 <head>
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet" href="/css/chat.css">
-  <title> Setting page </title>
+  <link rel="stylesheet" href="/css/media-quality.css">
+  <title> Chat page </title>
 </head>
 <body>
-  <div class="overlay">
-  
 
+  <div class="overlay js-overlay">
     <div class="exit js-exit"  id="x"> X
-    </div>
-
-    <div class="js-overlay">
-      <div class="img-container js-exit">
-        <img 
-         src="setting-icon.png" class="js-icon" id="setting-icon" alt="">
       </div>
-    </div>
+        
+      <div>
+        <div class="img-container">
+          <img 
+           src="setting-icon.png" id="setting-icon" alt="">
+        </div>
+      </div>
+
+    <nav class="navbar js-navbar">
 
 
     <nav class="navbar js-navbar">   
@@ -83,21 +85,18 @@
       </div>
 
         <div class="text-size-container">
-           <p>Text size </p>
+           <span>Text Size</span>
           <div class="text-button-container">
-            <div class="smaller-button">
-              <button class=" white-button js-button"
-              onclick="textButton('.js-button');"
+            <div>
+              <button class="js-small"
               >Smaller</button>
             </div>
-            <div class="normal-button">
-              <button class="js-button-2"
-              onclick="textButton('.js-button-2');"
+            <div>
+              <button class="js-normal"
               >Normal</button>
             </div>
-            <div class="bigger-button">
-              <button class="js-button-3"
-             onclick="textButton('.js-button-3');"
+            <div>
+              <button class="js-big"
               >Bigger</button>
           </div>
           </div>

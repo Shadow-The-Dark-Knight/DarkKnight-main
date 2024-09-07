@@ -45,6 +45,8 @@ closeSettingsButton.onclick = () => {
 };
 settings('open');
 
+window.onload = () => {
+
 const lightBtn = document.querySelector(".js-light");
 const darkBtn = document.querySelector('.js-dark');
 const colorBtn = document.querySelector('.js-color');
@@ -57,14 +59,14 @@ const lowBtn = document.querySelector('.js-low');
 
 function colorBtns (btnHover) {
 if(btnHover === "light") {
-  lightBtn.style.background = "#ff9d4c6d";
+  lightBtn.style.background = "#ff8a2a";
   darkBtn.style.background = "";
   colorBtn.style.background = "";
   return
 }
 
 if(btnHover === "dark") {
-  darkBtn.style.background = "#ff9d4c6d";
+  darkBtn.style.background = "#ff8a2a";
   lightBtn.style.background = "";
   colorBtn.style.background = "";
 
@@ -72,7 +74,7 @@ if(btnHover === "dark") {
 }
 
 if(btnHover === "color") {
-  colorBtn.style.background = "#ff9d4c6d"; 
+  colorBtn.style.background = "#ff8a2a"; 
   darkBtn.style.background = "";
   lightBtn.style.background = "";
 
@@ -80,7 +82,7 @@ if(btnHover === "color") {
 }
 
 if(btnHover === "high") {
-  highBtn.style.background = "#ff9d4c6d";
+  highBtn.style.background = " #ff8a2a";
   lowBtn.style.background = "";
   medBtn.style.background = "";
   return
@@ -89,13 +91,13 @@ if(btnHover === "high") {
 if(btnHover === "med") {
   highBtn.style.background = "";
   lowBtn.style.background = "";
-  medBtn.style.background = "#ff9d4c6d";
+  medBtn.style.background = " #ff8a2a";
   return
 } 
 
 if(btnHover === "low") {
   highBtn.style.background = "";
-  lowBtn.style.background = "#ff9d4c6d";
+  lowBtn.style.background = "#ff8a2a";
   medBtn.style.background = "";
   return
 } 
@@ -125,3 +127,5 @@ medBtn.onclick = () => {
 lowBtn.onclick = () => {
   colorBtns("low");
 }
+
+};
