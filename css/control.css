@@ -142,18 +142,15 @@ div button {
     border-radius: 4px;
     box-shadow: none;
     border: none;
-    background-color: #ff9c4c;
+    background-color: #ff8a2a;
     color: #fff;
     font-size: 16px;
     text-decoration: none;
     box-shadow: 0 2px 10px rgba(0,0,0,.2),0 4px 0#ff9c4c;
 }
 
-.reg-button {
-  background-color: #ff9c4c;
-}
 
 .js-button {
-  background-color: #ff8a2a;
+  background-color: #ff9c4c;
 }
 

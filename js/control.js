@@ -3,29 +3,13 @@ settings();
 
 
 window.onload = () => {
-const mouseBtn = document.querySelector('.js-button');
+    const mouseBtn = document.querySelector('.js-button');
 
-function mouse(selector) {
-    if (selector === 'clicked') {
-        mouseBtn.classList.add('js-button');
-        return;
-    }
-    if(selector === 'notclicked') {
-        mouseBtn.classList.remove('js-button');
-        return
-    }
-}
-
-
-
-mouseBtn.onclick = () => {
-    mouse('clicked')
-};
-
-mouseBtn.onclick = () => {
-    mouse('notclicked')
-};
-
-
-mouse('notclicked');
+    mouseBtn.addEventListener('click', () => {
+        if (mouseBtn.classList.contains('js-button')) {
+            mouseBtn.classList.remove('js-button'); // Set 'notclicked' state
+        } else {
+            mouseBtn.classList.add('js-button'); // Set 'clicked' state
+        }
+    });
 };
