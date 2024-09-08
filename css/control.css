@@ -53,7 +53,7 @@ nav {
 
 .overlay {
   width: 30%;
-  min-height: 100%;
+  min-height: 100vh;
   display: flex;
   justify-content: flex-end;
   background-color: #1c1c1c;
@@ -131,28 +131,26 @@ section {
 }
 
 div button {
-  margin-top: 6rem;
-  -webkit-user-select: none;
-  user-select: none;
-  cursor: pointer;
-  display: inline-block;
-  outline: 0;
-  text-align: center;
-  padding: 6px 10px;
-  border-radius: 4px;
-  border: none;
-  color: #fff;
-  font-size: 0.8rem;
-  text-decoration: none;
-  box-shadow: 0 2px 10px rgba(0,0,0,.2),0 4px 0#ff9c4c;
-  font-weight: 600;
+    margin-top: 6rem;
+    font-size: 0.8rem;
+    -webkit-user-select: none;
+    user-select: none;
+    cursor: pointer;
+    outline: 0;
+    text-align: center;
+    padding: 8px 8px;
+    border-radius: 4px;
+    box-shadow: none;
+    border: none;
+    background-color: #ff8a2a;
+    color: #fff;
+    font-size: 16px;
+    text-decoration: none;
+    box-shadow: 0 2px 10px rgba(0,0,0,.2),0 4px 0#ff9c4c;
 }
 
-.reg-button {
-  background-color: #ff9c4c;
-}
 
 .js-button {
-  background-color: #ff8a2a;
+  background-color: #ff9c4c;
 }
 
