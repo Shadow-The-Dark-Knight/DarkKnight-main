@@ -128,4 +128,6 @@ lowBtn.onclick = () => {
   colorBtns("low");
 }
 
+colorBtns("med");
+colorBtns('light');
 };
