@@ -5,7 +5,6 @@ const containerOfBtns = document.querySelector('.js-navbar');
 const overlayBackground = document.querySelector('.js-overlay');
 
 
-// Function for changing the state of the settings
    function settings(state) {
 
   if (state === 'open'){
@@ -15,6 +14,8 @@ const overlayBackground = document.querySelector('.js-overlay');
       background: "",
       boxShadow: "",
       border: "",
+      position: 'absolute',
+     
     })
     openSettingsButton.style.display = "none";
 
@@ -25,25 +26,31 @@ const overlayBackground = document.querySelector('.js-overlay');
 
 
   if (state === 'close'){
-    // Set display to none to hide the button
     closeSettingsButton.style.display = "none";
     containerOfBtns.style.display = "none";
     Object.assign(overlayBackground.style, {
       background: "none",
       boxShadow: "none",
       border: "none",
+      animate: "none",
     })
     openSettingsButton.style.display = "";
     return;
   }
+};
 
+const keyframes = [
+  { top: '-90rem'
+   },
+  { top: '-1rem'
+   }      
+];
 
-  // if the state was not matched make a error
-  
-  
- 
-
-}
+const options = {
+  duration: 1500,    
+  easing: 'linear',    
+  fill: 'forwards'     // Keep element in final postion 
+};
 
 
 openSettingsButton.onclick = () => {
@@ -54,3 +61,4 @@ closeSettingsButton.onclick = () => {
   settings('close');
 };
 settings('close');
+overlayBackground.animate(keyframes, options); // sets property 
